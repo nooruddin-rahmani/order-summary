@@ -1,0 +1,52 @@
+:root {
+  --primary-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --destured-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./images/pattern-background-desktop.svg") var(--primary-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  margin: 100px 534px;
+  border-radius: 20px;
+}
+.container > img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.heading h1 {
+  padding: 30px 50px;
+}
+@media (max-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin: 50px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
