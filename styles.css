@@ -15,34 +15,222 @@ body {
   background: url("./images/pattern-background-desktop.svg") var(--primary-blue);
   background-repeat: no-repeat;
   background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--dark-blue);
+  display: grid;
+  place-items: center;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--very-pale-blue);
+  width: 30%;
+  background-color: #fff;
   margin: 100px 534px;
   border-radius: 20px;
+  box-shadow: -1px 0px 43px -14px hsl(224, 23%, 55%);
 }
 .container > img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
-.heading h1 {
-  padding: 30px 50px;
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1440px) {
+.heading h1 {
+  padding: 50px 50px 20px 50px;
+}
+.heading p {
+  text-align: center;
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+.pricing {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--very-pale-blue);
+  height: 80px;
+  width: 350px;
+  border-radius: 10px;
+}
+.pricing > img {
+  margin: 15px;
+}
+.pricing > a {
+  margin: 30px 0px 0px 80px;
+  font-size: 14px;
+}
+.pricing > a:hover {
+  color: var(--bright-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+.plan {
+  margin-top: 20px;
+}
+.plan > p {
+  opacity: 0.7;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.proceed {
+  background: var(--bright-blue);
+  color: #fff;
+  outline: none;
+  padding: 15px 109px;
+  border: none;
+  border-radius: 10px;
+  margin: 30px 0px 30px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: -1px 0px 43px -14px hsl(224, 23%, 55%);
+}
+.proceed:hover {
+  background: var(--destured-blue);
+  cursor: pointer;
+}
+.cancel {
+  color: var(--destured-blue);
+  background: #fff;
+  border: none;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.cancel:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+/* @media (max-width: 1440px) {
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    margin: 100px 534px;
+    border-radius: 20px;
+    width: 32%;
+  }
+  .container > img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading h1 {
+    padding: 50px 50px 20px 50px;
+  }
+  .heading p {
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 20px;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: row;
     background-color: var(--very-pale-blue);
-    margin: 50px;
+    height: 80px;
+    width: 350px;
+    border-radius: 10px;
+  }
+  .pricing > img {
+    margin: 15px;
+  }
+  .pricing > a {
+    margin: 30px 0px 0px 80px;
+  }
+  .pricing > a:hover {
+    color: var(--bright-blue);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .plan {
+    margin-top: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .proceed {
+    background: var(--bright-blue);
+    color: #fff;
+    outline: none;
+    padding: 15px 109px;
+    border: none;
+    border-radius: 10px;
+    margin: 30px 0px 30px 0px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .proceed:hover {
+    background: var(--destured-blue);
+    cursor: pointer;
+  }
+  .cancel {
+    color: var(--destured-blue);
+    background: #fff;
+    border: none;
+    margin-bottom: 50px;
+    font-weight: 900;
+  }
+  .cancel:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+  }
+} */
+@media (max-width: 375px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg")
+      var(--primary-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: sans-serif;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 90vw;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--very-pale-blue);
+    height: 80px;
+    width: 280px;
+  }
+  .plan {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .pricing > a {
+    margin: 30px 0px 0px 40px;
+  }
+  .proceed {
+    padding: 15px 65px;
   }
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
